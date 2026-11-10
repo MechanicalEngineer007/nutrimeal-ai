@@ -1009,6 +1009,218 @@ function closeRecipeModal() {
 }
 
 // ==========================================
+// WEEKLY GROCERY SHOPPING LIST MODAL
+// ==========================================
+function openGroceryModal() {
+  const modal = document.getElementById("modalGrocery");
+  if (!modal) return;
+  modal.classList.remove("hidden");
+  renderGroceryList();
+}
+
+function closeGroceryModal() {
+  const modal = document.getElementById("modalGrocery");
+  if (modal) modal.classList.add("hidden");
+}
+
+function renderGroceryList() {
+  const container = document.getElementById("groceryListContent");
+  if (!container) return;
+
+  if (!state.planData || !state.planData.monthlyPlan || state.planData.monthlyPlan.length === 0) {
+    container.innerHTML = `
+      <div class="text-center py-8 text-slate-500">
+        <i class="fa-solid fa-basket-shopping text-3xl text-slate-300 mb-2"></i>
+        <p class="font-semibold">No active meal plan found.</p>
+        <p class="text-[11px] text-slate-400">Please generate or load a meal plan first.</p>
+      </div>`;
+    return;
+  }
+
+  const allDays = state.planData.monthlyPlan;
+  const currentDayIndex = allDays.findIndex(d => d.dayNum === state.selectedDayNum);
+  const startIndex = currentDayIndex !== -1 ? currentDayIndex : 0;
+  let weekDays = allDays.slice(startIndex, startIndex + 7);
+  if (weekDays.length < 7) {
+    weekDays = allDays.slice(0, 7);
+  }
+
+  const startDay = weekDays[0];
+  const endDay = weekDays[weekDays.length - 1];
+  const monthName = state.planData.context.monthName || "Month";
+
+  const itemMap = {};
+
+  weekDays.forEach(day => {
+    Object.values(day.meals || {}).forEach(dish => {
+      if (!dish || !dish.ingredients) return;
+      dish.ingredients.forEach(ing => {
+        const rawName = (ing.item || "").trim();
+        if (!rawName) return;
+
+        const normKey = rawName.toLowerCase();
+        if (!itemMap[normKey]) {
+          itemMap[normKey] = {
+            displayName: rawName,
+            quantities: [],
+            dishes: new Set()
+          };
+        }
+        if (ing.qty) itemMap[normKey].quantities.push(ing.qty);
+        itemMap[normKey].dishes.add(dish.name);
+      });
+    });
+  });
+
+  const categories = {
+    veggies: { title: "🥬 Fresh Vegetables, Greens & Herbs", items: [], color: "text-emerald-800 bg-emerald-50 border-emerald-200" },
+    grains: { title: "🌾 Grains, Flours, Millets & Breads", items: [], color: "text-amber-800 bg-amber-50 border-amber-200" },
+    pulses: { title: "🫘 Pulses, Dals, Sprouts & Legumes", items: [], color: "text-orange-800 bg-orange-50 border-orange-200" },
+    proteins: { title: "🐟 Seafood, Poultry, Eggs & Proteins", items: [], color: "text-rose-800 bg-rose-50 border-rose-200" },
+    nuts: { title: "🥥 Fresh Coconut, Nuts & Seeds", items: [], color: "text-teal-800 bg-teal-50 border-teal-200" },
+    dairy: { title: "🥛 Dairy & Probiotics", items: [], color: "text-blue-800 bg-blue-50 border-blue-200" },
+    spices: { title: "🧂 Spices, Seasonings & Cold-Pressed Oils", items: [], color: "text-slate-800 bg-slate-50 border-slate-200" },
+    other: { title: "🛒 Other Kitchen Essentials", items: [], color: "text-indigo-800 bg-indigo-50 border-indigo-200" }
+  };
+
+  function classifyItem(name) {
+    const l = name.toLowerCase();
+    if (l.includes("fish") || l.includes("surmai") || l.includes("bangda") || l.includes("mackerel") || l.includes("kingfish") || l.includes("chicken") || l.includes("mutton") || l.includes("egg") || l.includes("prawn") || l.includes("salmon") || l.includes("tofu") || l.includes("paneer")) return "proteins";
+    if (l.includes("onion") || l.includes("tomato") || l.includes("coriander") || l.includes("garlic") || l.includes("ginger") || l.includes("chilli") || l.includes("chili") || l.includes("curry leave") || l.includes("brinjal") || l.includes("vangi") || l.includes("palak") || l.includes("spinach") || l.includes("lemon") || l.includes("limbu") || l.includes("banana") || l.includes("apple") || l.includes("cucumber") || l.includes("kakdi") || l.includes("potato") || l.includes("veggie") || l.includes("fruit") || l.includes("kothimbir") || l.includes("mint") || l.includes("avocado") || l.includes("squash") || l.includes("berries")) return "veggies";
+    if (l.includes("rice") || l.includes("poha") || l.includes("phov") || l.includes("jowar") || l.includes("bajra") || l.includes("ragi") || l.includes("bhakri") || l.includes("flour") || l.includes("atta") || l.includes("wheat") || l.includes("oat") || l.includes("soba") || l.includes("tortilla") || l.includes("vade") || l.includes("rava") || l.includes("semolina") || l.includes("bhajani")) return "grains";
+    if (l.includes("dal") || l.includes("moong") || l.includes("toor") || l.includes("chana") || l.includes("matki") || l.includes("vatana") || l.includes("kulith") || l.includes("horse gram") || l.includes("besan") || l.includes("bean") || l.includes("lentil") || l.includes("sprout") || l.includes("cannellini")) return "pulses";
+    if (l.includes("coconut") || l.includes("peanut") || l.includes("shengdana") || l.includes("sesame") || l.includes("til") || l.includes("cashew") || l.includes("almond") || l.includes("walnut") || l.includes("seed") || l.includes("flaxseed") || l.includes("chia")) return "nuts";
+    if (l.includes("milk") || l.includes("curd") || l.includes("dahi") || l.includes("buttermilk") || l.includes("ghee") || l.includes("butter") || l.includes("loni") || l.includes("chaas") || l.includes("yogurt") || l.includes("feta") || l.includes("mattha")) return "dairy";
+    if (l.includes("masala") || l.includes("turmeric") || l.includes("haldi") || l.includes("salt") || l.includes("oil") || l.includes("mustard") || l.includes("cumin") || l.includes("jeera") || l.includes("hing") || l.includes("kokum") || l.includes("agam") || l.includes("pepper") || l.includes("cinnamon") || l.includes("cardamom") || l.includes("clove") || l.includes("ajwain") || l.includes("methi") || l.includes("thecha") || l.includes("metkut") || l.includes("sugar") || l.includes("jaggery")) return "spices";
+    return "other";
+  }
+
+  Object.values(itemMap).forEach(entry => {
+    const cat = classifyItem(entry.displayName);
+    categories[cat].items.push(entry);
+  });
+
+  const totalItemsCount = Object.keys(itemMap).length;
+
+  let html = `
+    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200/80 rounded-xl p-3 flex flex-wrap items-center justify-between gap-2">
+      <div>
+        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1.5">
+          <i class="fa-solid fa-calendar-week text-emerald-600"></i>
+          7-Day Plan Coverage: ${startDay.dayName} (${startDay.dayNum} ${monthName}) to ${endDay.dayName} (${endDay.dayNum} ${monthName})
+        </h4>
+        <p class="text-[11px] text-slate-600 mt-0.5">Aggregated for <strong>${state.activeProfileName || "Your Profile"}</strong> (${weekDays.length * 5} individual planned meal slots)</p>
+      </div>
+      <div class="text-right">
+        <span class="text-xs font-extrabold text-emerald-800 bg-white px-2.5 py-1 rounded-full border border-emerald-200 shadow-sm">
+          ${totalItemsCount} Ingredients Needed
+        </span>
+      </div>
+    </div>
+
+    <div class="space-y-3.5">
+  `;
+
+  Object.entries(categories).forEach(([key, cat]) => {
+    if (cat.items.length === 0) return;
+
+    html += `
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+        <div class="px-3 py-2 font-bold text-xs flex items-center justify-between border-b ${cat.color}">
+          <span>${cat.title}</span>
+          <span class="text-[10px] font-semibold opacity-75">${cat.items.length} items</span>
+        </div>
+        <div class="p-2 divide-y divide-slate-100">
+    `;
+
+    cat.items.forEach((entry) => {
+      const qtyStr = entry.quantities.length > 0
+        ? (entry.quantities.length > 1 ? `${entry.quantities.length}x servings (${entry.quantities.slice(0, 2).join(", ")}${entry.quantities.length > 2 ? '...' : ''})` : entry.quantities[0])
+        : "As per taste";
+
+      const dishesList = Array.from(entry.dishes).slice(0, 3).join(", ");
+      const extraDishes = entry.dishes.size > 3 ? ` +${entry.dishes.size - 3} more` : "";
+
+      html += `
+        <label class="flex items-start gap-2.5 p-2 rounded-lg hover:bg-slate-50 transition cursor-pointer select-none">
+          <input type="checkbox" class="grocery-item-check mt-1 rounded text-emerald-600 focus:ring-emerald-500 cursor-pointer">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <span class="font-bold text-slate-800 text-xs item-name">${entry.displayName}</span>
+              <span class="text-[11px] font-semibold text-emerald-800 bg-emerald-50/80 px-2 py-0.5 rounded border border-emerald-200/60">${qtyStr}</span>
+            </div>
+            <p class="text-[10px] text-slate-400 truncate mt-0.5" title="${Array.from(entry.dishes).join(', ')}">
+              Dishes: ${dishesList}${extraDishes}
+            </p>
+          </div>
+        </label>
+      `;
+    });
+
+    html += `
+        </div>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  container.innerHTML = html;
+
+  container.querySelectorAll(".grocery-item-check").forEach(chk => {
+    chk.addEventListener("change", (e) => {
+      const label = e.target.closest("label");
+      const nameEl = label.querySelector(".item-name");
+      if (e.target.checked) {
+        nameEl.classList.add("line-through", "text-slate-400");
+        label.classList.add("opacity-60", "bg-slate-50/60");
+      } else {
+        nameEl.classList.remove("line-through", "text-slate-400");
+        label.classList.remove("opacity-60", "bg-slate-50/60");
+      }
+    });
+  });
+}
+
+function copyGroceryListToClipboard() {
+  const container = document.getElementById("groceryListContent");
+  if (!container) return;
+
+  const labels = container.querySelectorAll("label");
+  if (labels.length === 0) return;
+
+  let text = `🛒 NutriMeal AI — Weekly Grocery Shopping List\n`;
+  text += `Profile: ${state.activeProfileName || "Personal"}\n`;
+  text += `Generated: ${new Date().toLocaleDateString()}\n\n`;
+
+  let currentCategory = "";
+  labels.forEach(label => {
+    const catHeader = label.closest(".bg-white")?.querySelector(".font-bold")?.textContent?.trim() || "";
+    if (catHeader && catHeader !== currentCategory) {
+      currentCategory = catHeader;
+      text += `\n--- ${currentCategory} ---\n`;
+    }
+    const name = label.querySelector(".item-name")?.textContent?.trim() || "";
+    const qty = label.querySelector("span.text-\\[11px\\]")?.textContent?.trim() || "";
+    const isChecked = label.querySelector("input")?.checked ? "[x]" : "[ ]";
+    text += `${isChecked} ${name} — ${qty}\n`;
+  });
+
+  navigator.clipboard.writeText(text).then(() => {
+    const btnText = document.getElementById("btnCopyGroceryText");
+    if (btnText) {
+      const orig = btnText.textContent;
+      btnText.textContent = "Copied to Clipboard!";
+      setTimeout(() => { btnText.textContent = orig; }, 2500);
+    }
+    if (window.AndroidNative && typeof window.AndroidNative.showToast === "function") {
+      window.AndroidNative.showToast("Grocery list copied to clipboard!");
+    }
+  }).catch(err => {
+    console.error("Failed to copy clipboard:", err);
+  });
+}
+
+// ==========================================
 // PROFILE MODAL (NAME-WISE PROFILES)
 // ==========================================
 function openProfileModal(isNew = false) {
@@ -1277,6 +1489,19 @@ function setupEventListeners() {
     btnRegen.addEventListener("click", regenerateDayMeals);
   }
 
+  // Grocery shopping list modal open & close
+  const btnOpenGroc = document.getElementById("btnOpenGrocery");
+  if (btnOpenGroc) btnOpenGroc.addEventListener("click", openGroceryModal);
+
+  const btnCloseGroc = document.getElementById("btnCloseGroceryModal");
+  if (btnCloseGroc) btnCloseGroc.addEventListener("click", closeGroceryModal);
+
+  const btnCloseGroc2 = document.getElementById("btnCloseGroceryBtn");
+  if (btnCloseGroc2) btnCloseGroc2.addEventListener("click", closeGroceryModal);
+
+  const btnCopyGroc = document.getElementById("btnCopyGrocery");
+  if (btnCopyGroc) btnCopyGroc.addEventListener("click", copyGroceryListToClipboard);
+
   // Recipe modal close
   const btnCloseRec = document.getElementById("btnCloseRecipeModal");
   if (btnCloseRec) btnCloseRec.addEventListener("click", closeRecipeModal);
@@ -1290,6 +1515,27 @@ function setupEventListeners() {
 
   const btnCancelProfile = document.getElementById("btnCancelProfile");
   if (btnCancelProfile) btnCancelProfile.addEventListener("click", closeProfileModal);
+
+  // Close modals on clicking backdrop
+  ["modalGrocery", "modalRecipe", "modalProfile"].forEach(modalId => {
+    const m = document.getElementById(modalId);
+    if (m) {
+      m.addEventListener("click", (e) => {
+        if (e.target === m) {
+          m.classList.add("hidden");
+        }
+      });
+    }
+  });
+
+  // Close modals on pressing Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      ["modalGrocery", "modalRecipe", "modalProfile"].forEach(modalId => {
+        document.getElementById(modalId)?.classList.add("hidden");
+      });
+    }
+  });
 
   // Profile form submission
   const profileForm = document.getElementById("profileForm");
