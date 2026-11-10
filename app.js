@@ -328,6 +328,8 @@ function renderProfileHeader() {
   const natEl = document.getElementById("profileNationalityBadge");
   if (natEl) {
     const natMap = {
+      marathi: "🚩 Maharashtrian / Marathi",
+      malvani: "🥥 Malvani & Konkani",
       indian: "🇮🇳 Indian Cuisine",
       american: "🇺🇸 American Cuisine",
       mediterranean: "🇬🇷 Mediterranean Cuisine",

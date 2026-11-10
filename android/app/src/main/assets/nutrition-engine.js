@@ -413,7 +413,14 @@ class NutritionEngine {
         filtered = illnessMatches;
       }
     } else if (userNationality && userNationality !== "all") {
-      const cuisineCandidates = baseCandidates.filter(d => d.cuisine === userNationality);
+      const cuisineCandidates = baseCandidates.filter(d => {
+        if (d.cuisine === userNationality) return true;
+        if (Array.isArray(d.cuisines) && d.cuisines.includes(userNationality)) return true;
+        if (userNationality === "indian" && (d.cuisine === "marathi" || d.cuisine === "malvani" || d.cuisine === "konkani")) return true;
+        if (userNationality === "marathi" && (d.cuisine === "malvani" || d.cuisine === "konkani")) return true;
+        if ((userNationality === "malvani" || userNationality === "konkani") && (d.cuisine === "malvani" || d.cuisine === "konkani")) return true;
+        return false;
+      });
       if (cuisineCandidates.length >= 2) {
         filtered = cuisineCandidates;
       }

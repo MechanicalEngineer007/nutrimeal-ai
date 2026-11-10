@@ -3982,6 +3982,1753 @@ const DISH_DATABASE = [
       "Serve hot with fresh curd."
     ],
     "healthNote": "Amaranth contains twice the calcium of cow milk and is the only grain packed with all nine essential amino acids including lysine."
+  },
+
+  // =========================================================================
+  // 🥥 KONKANI, MALVANI & 🚩 MARATHI SPECIALTIES
+  // =========================================================================
+{
+    "id": "b_malvani_ghavane",
+    "name": "Soft Konkani Neer Ghavane with Fresh Coconut Chutney",
+    "category": "breakfast",
+    "cuisine": "malvani",
+    "cuisines": [
+      "malvani",
+      "konkani",
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Malvani & Konkani",
+    "cuisineFlag": "🥥",
+    "seasons": [
+      "summer",
+      "monsoon",
+      "winter",
+      "all"
+    ],
+    "weather": [
+      "hot",
+      "rainy",
+      "pleasant",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Light, ultra-hydrating, non-fermented coastal breakfast gentle on acidity",
+    "isVeg": true,
+    "prepTime": "5 mins",
+    "cookTime": "8 mins",
+    "difficulty": "Easy",
+    "servingSize": "3 Thin Ghavane (180g) + Chutney (40g)",
+    "weightGrams": 220,
+    "calories": 275,
+    "carbs": 48,
+    "protein": 5.5,
+    "fat": 7,
+    "fiber": 3.8,
+    "sugar": 1.5,
+    "sodium": 180,
+    "vitamins": {
+      "vitaminC": 6,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "iron": 1.8,
+      "calcium": 35,
+      "zinc": 1.2
+    },
+    "allergens": [
+      "tree_nuts"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd",
+      "gluten_free"
+    ],
+    "ageRange": [
+      2,
+      90
+    ],
+    "texture": "soft",
+    "ingredients": [
+      {
+        "item": "Traditional Konkan Ukda/Kolam Rice flour",
+        "qty": "65g"
+      },
+      {
+        "item": "Lukewarm Water",
+        "qty": "180ml"
+      },
+      {
+        "item": "Rock Salt (Sendha Namak)",
+        "qty": "1/3 tsp"
+      },
+      {
+        "item": "Cold-Pressed Coconut Oil for greasing cast iron bid",
+        "qty": "3ml"
+      },
+      {
+        "item": "Fresh Grated Coconut Chutney with green chilli & roasted chana",
+        "qty": "40g"
+      }
+    ],
+    "recipeSteps": [
+      "Whisk rice flour, rock salt, and water into a smooth, watery buttermilk-like batter.",
+      "Heat a seasoned cast-iron Bhide (tawa) until smoking hot, wipe with a slice of onion dipped in coconut oil.",
+      "Pour a ladle of batter from the edges inwards; it will form delicate natural lace pores.",
+      "Cover with a lid for 90 seconds on medium heat without flipping.",
+      "Fold gently into triangles and serve warm with freshly ground coconut-coriander chutney."
+    ],
+    "healthNote": "Naturally 100% gluten-free and zero oil inside batter; exceptionally soothing for irritable bowel and GERD."
+  },
+  {
+    "id": "b_konkani_amboli",
+    "name": "Konkani Amboli (Porous Rice Pancakes) with Sprouted Kala Chana Usal",
+    "category": "breakfast",
+    "cuisine": "malvani",
+    "cuisines": [
+      "malvani",
+      "konkani",
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Malvani & Konkani",
+    "cuisineFlag": "🥥",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "spring",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "pleasant",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Natural microbiome-rich fermented coastal protein boost",
+    "isVeg": true,
+    "prepTime": "10 mins",
+    "cookTime": "12 mins",
+    "difficulty": "Medium",
+    "servingSize": "2 Amboli (160g) + Kala Chana Usal (120g)",
+    "weightGrams": 280,
+    "calories": 365,
+    "carbs": 58,
+    "protein": 13.5,
+    "fat": 8.5,
+    "fiber": 8.2,
+    "sugar": 2.5,
+    "sodium": 290,
+    "vitamins": {
+      "vitaminC": 9,
+      "vitaminD": 0,
+      "vitaminB12": 0.2,
+      "iron": 4.6,
+      "calcium": 75,
+      "zinc": 2.4
+    },
+    "allergens": [],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd"
+    ],
+    "ageRange": [
+      3,
+      85
+    ],
+    "texture": "soft",
+    "ingredients": [
+      {
+        "item": "Fermented Rice & Urad Dal Batter (with fenugreek seeds)",
+        "qty": "140g"
+      },
+      {
+        "item": "Sprouted Brown Chickpeas (Kala Chana)",
+        "qty": "60g"
+      },
+      {
+        "item": "Fresh Grated Coconut",
+        "qty": "15g"
+      },
+      {
+        "item": "Malvani Masala & Turmeric",
+        "qty": "1 tsp"
+      },
+      {
+        "item": "Curry Leaves, Mustard Seeds, Ginger",
+        "qty": "tempering"
+      }
+    ],
+    "recipeSteps": [
+      "Boil sprouted kala chana with rock salt and turmeric until soft.",
+      "Temper with mustard seeds, curry leaves, hing, Malvani masala, and fresh coconut for the Usal.",
+      "Pour thick fermented batter onto tawa, drizzle drops of oil, cover and cook till fluffy and golden.",
+      "Serve hot Amboli with rich high-protein sprouted chana usal."
+    ],
+    "healthNote": "Fermented batter delivers active gut probiotics; sprouted black chickpeas provide low glycemic index complex carbs and dense plant iron."
+  },
+  {
+    "id": "l_malvani_surmai_curry",
+    "name": "Authentic Malvani Surmai (Kingfish) Curry with Steamed Rice",
+    "category": "lunch",
+    "cuisine": "malvani",
+    "cuisines": [
+      "malvani",
+      "konkani",
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Malvani & Konkani",
+    "cuisineFlag": "🥥",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "summer",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "hot",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Fresh coastal catch loaded with marine omega-3 fatty acids and heart-protective peptides",
+    "isVeg": false,
+    "prepTime": "12 mins",
+    "cookTime": "15 mins",
+    "difficulty": "Medium",
+    "servingSize": "1 Fish Steak + Coconut Curry (180g) + Steamed Rice (140g)",
+    "weightGrams": 320,
+    "calories": 460,
+    "carbs": 42,
+    "protein": 34,
+    "fat": 16,
+    "fiber": 3.5,
+    "sugar": 1.2,
+    "sodium": 380,
+    "vitamins": {
+      "vitaminC": 7,
+      "vitaminD": 12.5,
+      "vitaminB12": 5.2,
+      "iron": 2.9,
+      "calcium": 65,
+      "zinc": 2.8
+    },
+    "allergens": [
+      "fish"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "heart_healthy"
+    ],
+    "ageRange": [
+      3,
+      90
+    ],
+    "texture": "tender",
+    "ingredients": [
+      {
+        "item": "Fresh Wild Kingfish (Surmai) steak",
+        "qty": "130g"
+      },
+      {
+        "item": "Fresh Grated Coconut Ground Paste (Vatap)",
+        "qty": "50g"
+      },
+      {
+        "item": "Bedgi Chilli Malvani Masala & Tirphal (Sichuan pepper)",
+        "qty": "1.5 tsp"
+      },
+      {
+        "item": "Dried Kokum Petals (Aamsul)",
+        "qty": "3 pieces"
+      },
+      {
+        "item": "Steamed Indrayani/Kolam Rice",
+        "qty": "140g"
+      },
+      {
+        "item": "Garlic, Ginger, Curry leaves",
+        "qty": "10g"
+      }
+    ],
+    "recipeSteps": [
+      "Marinate cleaned surmai steak with turmeric, pinch of Malvani masala, salt, and kokum extract.",
+      "Grind fresh coconut, roasted coriander seeds, and Bedgi chillies into a smooth fragrant coconut paste.",
+      "Bring the paste to a gentle boil in an earthen pot with kokum, bruised tirphal, and curry leaves.",
+      "Slide marinated fish steaks into the simmering gravy; cook gently for 5-6 minutes without stirring briskly.",
+      "Serve piping hot over fragrant steamed rice."
+    ],
+    "healthNote": "Surmai supplies 34g of complete lean protein, 12.5 mcg of Vitamin D, and powerful anti-inflammatory EPA/DHA marine lipids."
+  },
+  {
+    "id": "l_malvani_bangda_fry",
+    "name": "Crisp Malvani Bangda (Mackerel) Tawa Fry with Jowar Bhakri & Koshimbir",
+    "category": "lunch",
+    "cuisine": "malvani",
+    "cuisines": [
+      "malvani",
+      "konkani",
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Malvani & Konkani",
+    "cuisineFlag": "🥥",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "spring",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Highest natural marine Omega-3 concentration for brain focus and arterial elasticity",
+    "isVeg": false,
+    "prepTime": "10 mins",
+    "cookTime": "10 mins",
+    "difficulty": "Easy",
+    "servingSize": "1 Large Mackerel (140g) + 1 Jowar Bhakri (70g) + Salad (40g)",
+    "weightGrams": 250,
+    "calories": 420,
+    "carbs": 35,
+    "protein": 32,
+    "fat": 16.5,
+    "fiber": 5.5,
+    "sugar": 1,
+    "sodium": 340,
+    "vitamins": {
+      "vitaminC": 8,
+      "vitaminD": 14.8,
+      "vitaminB12": 6.8,
+      "iron": 3.6,
+      "calcium": 85,
+      "zinc": 3.1
+    },
+    "allergens": [
+      "fish"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "heart_healthy"
+    ],
+    "ageRange": [
+      4,
+      85
+    ],
+    "texture": "crispy_exterior",
+    "ingredients": [
+      {
+        "item": "Fresh Coastal Mackerel (Bangda), cleaned & slit",
+        "qty": "140g"
+      },
+      {
+        "item": "Malvani Red Masala & Turmeric",
+        "qty": "1 tbsp"
+      },
+      {
+        "item": "Pure Kokum Pulp (Agam)",
+        "qty": "1 tbsp"
+      },
+      {
+        "item": "Fine Semolina (Rava) & Rice Flour for shallow crust",
+        "qty": "15g"
+      },
+      {
+        "item": "Handmade Sorghum (Jowar) Bhakri",
+        "qty": "70g"
+      },
+      {
+        "item": "Cold-Pressed Groundnut Oil for shallow fry",
+        "qty": "8ml"
+      }
+    ],
+    "recipeSteps": [
+      "Make diagonal slits on mackerel; rub thoroughly with rock salt, turmeric, Malvani masala, and sour kokum pulp.",
+      "Coat fish lightly with a mixture of fine semolina and rice flour for a crisp outer barrier.",
+      "Shallow fry on an iron griddle on medium heat for 4 minutes per side until aromatic and crisp.",
+      "Serve accompanied by a warm fiber-rich jowar bhakri and sliced onion-lemon salad."
+    ],
+    "healthNote": "Mackerel provides over 2200mg of Omega-3 per serving, supporting arterial plaque reversal and cognitive longevity."
+  },
+  {
+    "id": "d_malvani_kombdi_vade",
+    "name": "Traditional Malvani Chicken Rassa with Multigrain Vade",
+    "category": "dinner",
+    "cuisine": "malvani",
+    "cuisines": [
+      "malvani",
+      "konkani",
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Malvani & Konkani",
+    "cuisineFlag": "🥥",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Warming coastal spices (dagad phool, black pepper, roasted dry coconut) for deep metabolic vitality",
+    "isVeg": false,
+    "prepTime": "15 mins",
+    "cookTime": "25 mins",
+    "difficulty": "Medium",
+    "servingSize": "Chicken Curry (220g) + 2 Baked/Air-crisped Multigrain Vade (90g)",
+    "weightGrams": 310,
+    "calories": 495,
+    "carbs": 45,
+    "protein": 36,
+    "fat": 18,
+    "fiber": 6.8,
+    "sugar": 2,
+    "sodium": 410,
+    "vitamins": {
+      "vitaminC": 11,
+      "vitaminD": 1.2,
+      "vitaminB12": 1.8,
+      "iron": 4.2,
+      "calcium": 90,
+      "zinc": 3.8
+    },
+    "allergens": [],
+    "conditions": [
+      "diabetes",
+      "hypertension"
+    ],
+    "ageRange": [
+      5,
+      85
+    ],
+    "texture": "tender",
+    "ingredients": [
+      {
+        "item": "Skinless Lean Chicken pieces",
+        "qty": "150g"
+      },
+      {
+        "item": "Roasted Dry Coconut & Onion paste (Kala Vatap)",
+        "qty": "40g"
+      },
+      {
+        "item": "Special Malvani Garam Masala with Stone Flower (Dagad Phool)",
+        "qty": "1.5 tsp"
+      },
+      {
+        "item": "Traditional Vade Flour (Rice, Chana, Urad, Jowar, Methi roasted)",
+        "qty": "60g"
+      },
+      {
+        "item": "Ginger, Garlic, Green Chillies, Fresh Coriander",
+        "qty": "15g"
+      }
+    ],
+    "recipeSteps": [
+      "Marinate chicken in ginger-garlic paste, turmeric, and rock salt.",
+      "Roast dry coconut and sliced onions till dark mahogany; grind with roasted whole spices into aromatic Vatap.",
+      "Sear marinated chicken in 1 tsp oil, blend in Vatap, add water, and simmer for 18 minutes until fork tender.",
+      "Knead vade flour with warm water; pat into circles and roast on griddle or lightly bake/pan-sear with minimal oil.",
+      "Serve steaming chicken curry paired with fragrant artisanal multigrain vade."
+    ],
+    "healthNote": "Vade flour combines 4 grains and fenugreek seeds, slowing glucose absorption while lean poultry delivers high-density B-vitamins and zinc."
+  },
+  {
+    "id": "l_malvani_kalya_vatanyachi_usal",
+    "name": "Malvani Kalya Vatanyachi Usal with Toasted Coconut & Jowar Bhakri",
+    "category": "lunch",
+    "cuisine": "malvani",
+    "cuisines": [
+      "malvani",
+      "konkani",
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Malvani & Konkani",
+    "cuisineFlag": "🥥",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "spring",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "pleasant",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Deep earthy heirloom black peas providing unparalleled plant iron and digestive prebiotic fiber",
+    "isVeg": true,
+    "prepTime": "10 mins (plus soak)",
+    "cookTime": "20 mins",
+    "difficulty": "Easy",
+    "servingSize": "Usal (190g) + 1 Fresh Jowar Bhakri (70g)",
+    "weightGrams": 260,
+    "calories": 380,
+    "carbs": 62,
+    "protein": 16.5,
+    "fat": 7.5,
+    "fiber": 14.5,
+    "sugar": 2.8,
+    "sodium": 260,
+    "vitamins": {
+      "vitaminC": 12,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "iron": 5.8,
+      "calcium": 110,
+      "zinc": 2.9
+    },
+    "allergens": [],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd",
+      "gluten_free"
+    ],
+    "ageRange": [
+      4,
+      90
+    ],
+    "texture": "tender",
+    "ingredients": [
+      {
+        "item": "Heirloom Dried Black Peas (Kala Vatana), soaked & boiled",
+        "qty": "80g dry"
+      },
+      {
+        "item": "Roasted Coconut & Brown Onion paste",
+        "qty": "30g"
+      },
+      {
+        "item": "Malvani Curry Masala & Hing",
+        "qty": "1 tsp"
+      },
+      {
+        "item": "Dried Kokum petals",
+        "qty": "2 pieces"
+      },
+      {
+        "item": "Handcrafted Jowar (Sorghum) Bhakri",
+        "qty": "70g"
+      },
+      {
+        "item": "Fresh Coriander & Curry leaves",
+        "qty": "pinch"
+      }
+    ],
+    "recipeSteps": [
+      "Pressure cook soaked black peas with salt and turmeric until tender.",
+      "Heat a clay pan, add mustard seeds, curry leaves, and the roasted coconut-onion vatap.",
+      "Stir in Malvani masala, cooked black peas with their nutrient-rich broth, and kokum.",
+      "Simmer for 10 minutes until flavors infuse deeply into a thick rustic gravy.",
+      "Enjoy alongside warm, freshly roasted jowar bhakri."
+    ],
+    "healthNote": "Kala Vatana is an exceptional source of non-heme iron (5.8mg) and prebiotic soluble fiber, stabilizing postprandial blood glucose."
+  },
+  {
+    "id": "s_konkani_solkadhi",
+    "name": "Authentic Chilled Solkadhi (Kokum & Fresh Coconut Milk Tonic)",
+    "category": "snack",
+    "cuisine": "malvani",
+    "cuisines": [
+      "malvani",
+      "konkani",
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Malvani & Konkani",
+    "cuisineFlag": "🥥",
+    "seasons": [
+      "summer",
+      "monsoon",
+      "winter",
+      "all"
+    ],
+    "weather": [
+      "hot",
+      "humid",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Superb thermogenic cooler infused with natural Hydroxycitric Acid (HCA) for effortless metabolic balance",
+    "isVeg": true,
+    "prepTime": "6 mins",
+    "cookTime": "0 mins",
+    "difficulty": "Very Easy",
+    "servingSize": "1 Big Glass (220ml)",
+    "weightGrams": 220,
+    "calories": 125,
+    "carbs": 7,
+    "protein": 2.2,
+    "fat": 10,
+    "fiber": 2,
+    "sugar": 1.8,
+    "sodium": 140,
+    "vitamins": {
+      "vitaminC": 18,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "iron": 1.4,
+      "calcium": 40,
+      "zinc": 0.8
+    },
+    "allergens": [
+      "tree_nuts"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd",
+      "gluten_free"
+    ],
+    "ageRange": [
+      3,
+      95
+    ],
+    "texture": "liquid",
+    "ingredients": [
+      {
+        "item": "Fresh Coconut Milk (first & second extract)",
+        "qty": "180ml"
+      },
+      {
+        "item": "Concentrated Kokum Extract (Agam)",
+        "qty": "30ml"
+      },
+      {
+        "item": "Crushed Garlic cloves",
+        "qty": "2 small"
+      },
+      {
+        "item": "Green Chilli (bruised)",
+        "qty": "1/2"
+      },
+      {
+        "item": "Roasted Cumin Powder & Sendha Namak",
+        "qty": "1/2 tsp"
+      },
+      {
+        "item": "Fresh Coriander leaves, finely chopped",
+        "qty": "5g"
+      }
+    ],
+    "recipeSteps": [
+      "Extract fresh milk from freshly grated coconut using lukewarm water and a muslin cloth.",
+      "Stir in authentic unsweetened kokum extract until a soothing blush pink color forms.",
+      "Add crushed garlic, a slit green chilli, roasted cumin powder, and sendha namak.",
+      "Garnish with freshly chopped coriander; chill for 20 minutes before sipping slowly after meals."
+    ],
+    "healthNote": "Kokum's active compound Garcinol combined with healthy medium-chain triglycerides (MCTs) eradicates hyperacidity and restores digestive microbiome."
+  },
+  {
+    "id": "d_konkani_kulith_pithla",
+    "name": "Rustic Konkani Kulith Pithla (Horse Gram Stew) with Rice Bhakri",
+    "category": "dinner",
+    "cuisine": "malvani",
+    "cuisines": [
+      "malvani",
+      "konkani",
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Malvani & Konkani",
+    "cuisineFlag": "🥥",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Traditional ancient Konkan superfood with unmatched iron density and metabolic heat",
+    "isVeg": true,
+    "prepTime": "8 mins",
+    "cookTime": "12 mins",
+    "difficulty": "Easy",
+    "servingSize": "Kulith Pithla (200g) + 1 Rice Bhakri (70g)",
+    "weightGrams": 270,
+    "calories": 345,
+    "carbs": 56,
+    "protein": 15,
+    "fat": 6,
+    "fiber": 11,
+    "sugar": 1.5,
+    "sodium": 280,
+    "vitamins": {
+      "vitaminC": 8,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "iron": 6.8,
+      "calcium": 190,
+      "zinc": 2.6
+    },
+    "allergens": [],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd",
+      "gluten_free"
+    ],
+    "ageRange": [
+      4,
+      90
+    ],
+    "texture": "soft",
+    "ingredients": [
+      {
+        "item": "Roasted Horse Gram (Kulith) flour",
+        "qty": "45g"
+      },
+      {
+        "item": "Crushed Garlic, Green Chilli, Mustard, Curry Leaves",
+        "qty": "10g"
+      },
+      {
+        "item": "Kokum petals",
+        "qty": "2 pieces"
+      },
+      {
+        "item": "Pure Cold-Pressed Coconut Oil",
+        "qty": "5ml"
+      },
+      {
+        "item": "Crisp Traditional Rice Bhakri",
+        "qty": "70g"
+      }
+    ],
+    "recipeSteps": [
+      "Mix roasted Kulith flour with 250ml water into a lump-free thin slurry.",
+      "In a kadai, crackle mustard seeds, curry leaves, hing, green chillies, and plenty of crushed garlic in coconut oil.",
+      "Pour in the Kulith slurry, stir continuously on low flame until it thickens into a glossy, fragrant stew.",
+      "Drop in kokum petals and season with rock salt.",
+      "Serve warm paired with a thin, handmade Konkani rice bhakri."
+    ],
+    "healthNote": "Horse gram possesses the highest iron (6.8mg) and calcium (190mg) among all lentils, widely recognized for reducing renal calcium oxalate crystallization."
+  },
+  {
+    "id": "b_marathi_kanda_poha",
+    "name": "Authentic Maharashtrian Kanda Poha with Peanuts & Fresh Coconut",
+    "category": "breakfast",
+    "cuisine": "marathi",
+    "cuisines": [
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Maharashtrian",
+    "cuisineFlag": "🚩",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "summer",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "hot",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Classic iron-rich flattened rice energized with roasted peanuts and raw lemon ascorbic acid",
+    "isVeg": true,
+    "prepTime": "6 mins",
+    "cookTime": "8 mins",
+    "difficulty": "Easy",
+    "servingSize": "1 Warm Bowl (220g)",
+    "weightGrams": 220,
+    "calories": 310,
+    "carbs": 49,
+    "protein": 7.8,
+    "fat": 9.5,
+    "fiber": 4.8,
+    "sugar": 2.2,
+    "sodium": 230,
+    "vitamins": {
+      "vitaminC": 22,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "iron": 4.5,
+      "calcium": 48,
+      "zinc": 1.8
+    },
+    "allergens": [
+      "peanuts"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd",
+      "gluten_free"
+    ],
+    "ageRange": [
+      3,
+      90
+    ],
+    "texture": "soft_fluffy",
+    "ingredients": [
+      {
+        "item": "Medium-Thick Jada Poha (Flattened Rice), gently rinsed",
+        "qty": "70g dry"
+      },
+      {
+        "item": "Finely sliced Red Onion (Kanda)",
+        "qty": "45g"
+      },
+      {
+        "item": "Crunchy Raw Peanuts",
+        "qty": "18g"
+      },
+      {
+        "item": "Green chillies, Curry leaves, Mustard seeds, Turmeric, Hing",
+        "qty": "tadka"
+      },
+      {
+        "item": "Cold-Pressed Groundnut Oil",
+        "qty": "6ml"
+      },
+      {
+        "item": "Fresh Grated Coconut, Lemon Juice, Coriander",
+        "qty": "garnish"
+      }
+    ],
+    "recipeSteps": [
+      "Rinse poha in a colander under running water for 30 seconds; drain completely and toss with a pinch of salt and turmeric.",
+      "Heat groundnut oil in a kadai; roast peanuts until golden and crisp, then remove aside.",
+      "In the same oil, add mustard seeds, hing, curry leaves, green chillies, and sliced onions; saute till onions turn soft and translucent.",
+      "Gently fold in the softened poha and roasted peanuts; sprinkle 2 tbsp water, cover with lid and steam on low flame for 2 minutes.",
+      "Drizzle with fresh lemon juice and garnish generously with fresh coconut and coriander."
+    ],
+    "healthNote": "Poha is naturally rich in non-heme iron (4.5mg); pairing it with fresh lemon juice elevates iron bioavailability by over 300% via Vitamin C ascorbic binding."
+  },
+  {
+    "id": "b_marathi_thalipeeth",
+    "name": "Multi-Grain Bhajani Thalipeeth with Fresh White Butter (Loni) & Curd",
+    "category": "breakfast",
+    "cuisine": "marathi",
+    "cuisines": [
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Maharashtrian",
+    "cuisineFlag": "🚩",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "spring",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "pleasant",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Artisanal roasted five-grain slow-release carbohydrate fuel for sustained all-day stamina",
+    "isVeg": true,
+    "prepTime": "8 mins",
+    "cookTime": "12 mins",
+    "difficulty": "Easy",
+    "servingSize": "2 Crisp Thalipeeth (170g) + Dahi (50g) + Dab of Loni (5g)",
+    "weightGrams": 225,
+    "calories": 360,
+    "carbs": 52,
+    "protein": 11.5,
+    "fat": 11.5,
+    "fiber": 8.5,
+    "sugar": 2,
+    "sodium": 270,
+    "vitamins": {
+      "vitaminC": 6,
+      "vitaminD": 0.2,
+      "vitaminB12": 0.3,
+      "iron": 4.8,
+      "calcium": 115,
+      "zinc": 2.7
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd"
+    ],
+    "ageRange": [
+      3,
+      90
+    ],
+    "texture": "crispy_edges",
+    "ingredients": [
+      {
+        "item": "Traditional Roasted Bhajani Flour (Jowar, Bajra, Chana dal, Rice, Wheat, Coriander seeds)",
+        "qty": "70g"
+      },
+      {
+        "item": "Finely chopped Onions & Fresh Coriander",
+        "qty": "35g"
+      },
+      {
+        "item": "White Sesame seeds (Til) & Ajwain",
+        "qty": "1 tsp"
+      },
+      {
+        "item": "Green Chilli-Garlic crushed paste",
+        "qty": "1/2 tsp"
+      },
+      {
+        "item": "Homemade Cow Butter (Loni) & Fresh Curd",
+        "qty": "5g loni + 50g dahi"
+      }
+    ],
+    "recipeSteps": [
+      "Combine Bhajani flour, chopped onions, coriander, green chilli-garlic paste, sesame seeds, ajwain, and warm water into a soft pliable dough.",
+      "Place a wet muslin cloth or butter paper on a board; pat a ball of dough evenly into a round disc, making 3 tiny center holes.",
+      "Transfer onto a heated iron tawa; drizzle a few drops of oil into the holes, cover and cook on medium flame for 3 minutes until golden brown.",
+      "Flip and roast the other side until edges are wonderfully crisp.",
+      "Serve hot with a dollop of fresh white butter (loni) and cool curd."
+    ],
+    "healthNote": "The multi-grain composition combines complex dietary fiber with high sesame calcium (115mg), resulting in a very low glycemic response ideal for diabetic metabolic care."
+  },
+  {
+    "id": "l_marathi_pithla_bhakri",
+    "name": "Authentic Maharashtrian Pithla Bhakri with Spicy Lasun-Mirchi Thecha",
+    "category": "lunch",
+    "cuisine": "marathi",
+    "cuisines": [
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Maharashtrian",
+    "cuisineFlag": "🚩",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "summer",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "The legendary Maharashtrian wholesome meal packed with plant protein, bioflavonoids, and whole-grain fiber",
+    "isVeg": true,
+    "prepTime": "8 mins",
+    "cookTime": "12 mins",
+    "difficulty": "Easy",
+    "servingSize": "Silky Pithla (180g) + 1 Warm Jowar Bhakri (80g) + Thecha (15g)",
+    "weightGrams": 275,
+    "calories": 390,
+    "carbs": 58,
+    "protein": 15.2,
+    "fat": 9.8,
+    "fiber": 10.5,
+    "sugar": 2.5,
+    "sodium": 320,
+    "vitamins": {
+      "vitaminC": 19,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "iron": 5.2,
+      "calcium": 95,
+      "zinc": 2.8
+    },
+    "allergens": [],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd",
+      "gluten_free"
+    ],
+    "ageRange": [
+      4,
+      90
+    ],
+    "texture": "silky_stew",
+    "ingredients": [
+      {
+        "item": "Bengal Gram (Besan) flour",
+        "qty": "45g"
+      },
+      {
+        "item": "Crushed Garlic cloves, Green chillies, Cumin, Mustard, Hing",
+        "qty": "15g"
+      },
+      {
+        "item": "Finely sliced Onion & Fresh Coriander",
+        "qty": "30g"
+      },
+      {
+        "item": "Cold-Pressed Groundnut Oil",
+        "qty": "7ml"
+      },
+      {
+        "item": "Handmade Sorghum (Jowar) Bhakri",
+        "qty": "80g"
+      },
+      {
+        "item": "Rustic Mortar-Pestle Lasun Thecha (Garlic, green chilli, salt)",
+        "qty": "15g"
+      }
+    ],
+    "recipeSteps": [
+      "Whisk besan with 200ml water and turmeric into a silky smooth slurry without lumps.",
+      "Heat groundnut oil in a pan, add mustard seeds, cumin, hing, generous crushed garlic, curry leaves, and sliced onions.",
+      "Once onions soften, pour in the besan slurry while stirring continuously to prevent clumping.",
+      "Cover and steam on low flame for 5 minutes until the pithla turns glossy, thick, and aromatic.",
+      "Garnish with coriander and serve alongside hot jowar bhakri, sliced raw onion, and fiery thecha."
+    ],
+    "healthNote": "Besan and Jowar combine for a 100% gluten-free, high-protein (15.2g), high-iron powerhouse meal with natural garlic allicin promoting vascular health."
+  },
+  {
+    "id": "l_marathi_varan_bhaat",
+    "name": "Traditional Varan Bhaat with Sajuk Tup (Pure Desi Ghee) & Limbu",
+    "category": "lunch",
+    "cuisine": "marathi",
+    "cuisines": [
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Maharashtrian",
+    "cuisineFlag": "🚩",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "summer",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "hot",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "The quintessential comforting, ultra-digestible sattvic complete amino acid profile",
+    "isVeg": true,
+    "prepTime": "5 mins",
+    "cookTime": "15 mins",
+    "difficulty": "Very Easy",
+    "servingSize": "Cooked Rice (150g) + Simple Varan (150g) + Pure Ghee (6g)",
+    "weightGrams": 306,
+    "calories": 385,
+    "carbs": 64,
+    "protein": 13.8,
+    "fat": 8.5,
+    "fiber": 6.2,
+    "sugar": 1,
+    "sodium": 210,
+    "vitamins": {
+      "vitaminC": 14,
+      "vitaminD": 0.3,
+      "vitaminB12": 0.1,
+      "iron": 3.8,
+      "calcium": 42,
+      "zinc": 2.1
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd"
+    ],
+    "ageRange": [
+      1,
+      95
+    ],
+    "texture": "soft_comfort",
+    "ingredients": [
+      {
+        "item": "Polished-Free Pigeon Pea (Toor Dal), pressure cooked",
+        "qty": "50g dry"
+      },
+      {
+        "item": "Fragrant Indrayani or Kolam Rice, steamed",
+        "qty": "60g dry (150g cooked)"
+      },
+      {
+        "item": "Turmeric, Hing, and Rock Salt",
+        "qty": "seasoning"
+      },
+      {
+        "item": "Pure Desi Cow Ghee (Sajuk Tup)",
+        "qty": "6g (1 tsp)"
+      },
+      {
+        "item": "Fresh Lemon wedge & Metkut (roasted pulse powder)",
+        "qty": "pinch"
+      }
+    ],
+    "recipeSteps": [
+      "Pressure cook toor dal with turmeric, pinch of hing, and water until completely melted and soft.",
+      "Whisk thoroughly with a traditional ravi (wooden churner) until silky smooth, adding rock salt.",
+      "Mound piping hot steamed fragrant rice onto a thali; create a gentle well in the center.",
+      "Pour generous ladles of golden varan into the center, top with a spoonful of warm aromatic desi ghee.",
+      "Squeeze fresh lemon juice over the top and enjoy this timeless classic comfort."
+    ],
+    "healthNote": "The combination of rice and toor dal creates a 100% complete protein matrix containing all essential amino acids; desi ghee provides short-chain butyric acid for gut epithelium repair."
+  },
+  {
+    "id": "l_marathi_matki_usal",
+    "name": "Sprouted Matki (Moth Bean) Usal with Smoky Goda Masala & Phulka",
+    "category": "lunch",
+    "cuisine": "marathi",
+    "cuisines": [
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Maharashtrian",
+    "cuisineFlag": "🚩",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "spring",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "pleasant",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Mineral-rich sprouted moth beans delivering clean plant protein and anti-fatigue B-vitamins",
+    "isVeg": true,
+    "prepTime": "8 mins",
+    "cookTime": "12 mins",
+    "difficulty": "Easy",
+    "servingSize": "Matki Usal (180g) + 2 Whole Wheat Phulkas (70g)",
+    "weightGrams": 250,
+    "calories": 365,
+    "carbs": 56,
+    "protein": 16.2,
+    "fat": 7.8,
+    "fiber": 11.8,
+    "sugar": 2.6,
+    "sodium": 250,
+    "vitamins": {
+      "vitaminC": 15,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "iron": 5.6,
+      "calcium": 88,
+      "zinc": 3.2
+    },
+    "allergens": [],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd"
+    ],
+    "ageRange": [
+      3,
+      90
+    ],
+    "texture": "tender",
+    "ingredients": [
+      {
+        "item": "Freshly Sprouted Moth Beans (Matki)",
+        "qty": "110g"
+      },
+      {
+        "item": "Traditional Maharashtrian Goda Masala",
+        "qty": "1.5 tsp"
+      },
+      {
+        "item": "Mustard seeds, Hing, Turmeric, Curry leaves",
+        "qty": "tadka"
+      },
+      {
+        "item": "Fresh grated Coconut & Chopped Coriander",
+        "qty": "15g"
+      },
+      {
+        "item": "Whole Wheat Soft Phulkas",
+        "qty": "2 (70g)"
+      },
+      {
+        "item": "Cold-Pressed Groundnut Oil",
+        "qty": "5ml"
+      }
+    ],
+    "recipeSteps": [
+      "Steam sprouted matki with a pinch of turmeric and salt for 4 minutes until tender yet retaining a bite.",
+      "Heat groundnut oil in a pan, crackle mustard seeds, hing, and curry leaves.",
+      "Add finely chopped onions, tomato, and authentic sweet-smoky Goda masala; saute until aromatic.",
+      "Fold in the sprouted matki and 50ml water; simmer on low flame for 5 minutes.",
+      "Garnish with freshly grated coconut and coriander; serve hot with light whole-wheat phulkas."
+    ],
+    "healthNote": "Sprouting activates enzymes, decreasing phytates and boosting zinc and iron bioavailability; Goda masala's stone flower and cassia promote insulin sensitivity."
+  },
+  {
+    "id": "d_marathi_bharli_vangi",
+    "name": "Maharashtrian Bharli Vangi (Stuffed Baby Brinjals) with Bajra Bhakri",
+    "category": "dinner",
+    "cuisine": "marathi",
+    "cuisines": [
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Maharashtrian",
+    "cuisineFlag": "🚩",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "Rich roasted peanut, dry coconut, and sesame stuffing delivering heart-healthy unsaturated fats",
+    "isVeg": true,
+    "prepTime": "12 mins",
+    "cookTime": "18 mins",
+    "difficulty": "Medium",
+    "servingSize": "2 Stuffed Vangi with Gravy (180g) + 1 Bajra Bhakri (80g)",
+    "weightGrams": 260,
+    "calories": 425,
+    "carbs": 52,
+    "protein": 13.5,
+    "fat": 18.5,
+    "fiber": 12.5,
+    "sugar": 3.5,
+    "sodium": 290,
+    "vitamins": {
+      "vitaminC": 11,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "iron": 6.2,
+      "calcium": 165,
+      "zinc": 3.4
+    },
+    "allergens": [
+      "peanuts",
+      "sesame"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gluten_free"
+    ],
+    "ageRange": [
+      4,
+      90
+    ],
+    "texture": "tender",
+    "ingredients": [
+      {
+        "item": "Small tender purple brinjals (slit into quarters with stalk intact)",
+        "qty": "120g (3 baby)"
+      },
+      {
+        "item": "Roasted Peanut powder (Shengdana koot)",
+        "qty": "30g"
+      },
+      {
+        "item": "Roasted Sesame seeds (Til) & Dry Coconut powder",
+        "qty": "15g"
+      },
+      {
+        "item": "Maharashtrian Kanda-Lasun / Goda Masala & Jaggery (tiny pinch)",
+        "qty": "1.5 tsp"
+      },
+      {
+        "item": "Handmade Pearl Millet (Bajra) Bhakri",
+        "qty": "80g"
+      },
+      {
+        "item": "Cold-Pressed Groundnut Oil",
+        "qty": "7ml"
+      }
+    ],
+    "recipeSteps": [
+      "Mix roasted peanut powder, sesame, dry coconut, Goda masala, garlic paste, rock salt, and coriander into a stuffing.",
+      "Stuff the mixture tightly into the slit baby brinjals.",
+      "Heat groundnut oil in an iron pan, add mustard seeds and curry leaves; arrange the stuffed brinjals in a single layer.",
+      "Add remaining masala with 150ml water; cover and cook on low heat for 15 minutes until brinjals are meltingly tender.",
+      "Serve warm paired with iron-rich handmade Bajra bhakri."
+    ],
+    "healthNote": "Bajra is exceptionally rich in magnesium and iron (6.2mg); sesame seeds contribute 165mg of bioavailable calcium, bolstering bone density."
+  },
+  {
+    "id": "s_marathi_kothimbir_vadi",
+    "name": "Steamed & Lightly Roasted Kothimbir Vadi (Coriander & Besan Cakes)",
+    "category": "snack",
+    "cuisine": "marathi",
+    "cuisines": [
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Maharashtrian",
+    "cuisineFlag": "🚩",
+    "seasons": [
+      "winter",
+      "monsoon",
+      "summer",
+      "all"
+    ],
+    "weather": [
+      "cold",
+      "rainy",
+      "hot",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "High folate and heavy-metal detoxifying fresh coriander herbs pressed with golden chickpea protein",
+    "isVeg": true,
+    "prepTime": "10 mins",
+    "cookTime": "15 mins",
+    "difficulty": "Medium",
+    "servingSize": "4 Steamed Vadi Slices (140g) + Mint Chutney (25g)",
+    "weightGrams": 165,
+    "calories": 220,
+    "carbs": 26,
+    "protein": 9.5,
+    "fat": 8.5,
+    "fiber": 5.2,
+    "sugar": 1.5,
+    "sodium": 190,
+    "vitamins": {
+      "vitaminC": 28,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "iron": 3.8,
+      "calcium": 80,
+      "zinc": 1.6
+    },
+    "allergens": [
+      "sesame"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd",
+      "gluten_free"
+    ],
+    "ageRange": [
+      3,
+      90
+    ],
+    "texture": "crispy_edges_soft_center",
+    "ingredients": [
+      {
+        "item": "Fresh Coriander leaves (Kothimbir), finely chopped",
+        "qty": "75g"
+      },
+      {
+        "item": "Bengal Gram (Besan) flour",
+        "qty": "45g"
+      },
+      {
+        "item": "Rice flour for crispness",
+        "qty": "10g"
+      },
+      {
+        "item": "Crushed Ginger, Garlic, Green Chilli & Sesame seeds (Til)",
+        "qty": "10g"
+      },
+      {
+        "item": "Cold-Pressed Groundnut Oil for light tawa roasting",
+        "qty": "5ml"
+      }
+    ],
+    "recipeSteps": [
+      "Mix chopped coriander, besan, rice flour, crushed ginger-garlic-chilli, turmeric, salt, and sesame seeds with minimal water into a tight cylindrical dough.",
+      "Steam the roll in a steamer for 15 minutes until a knife inserted comes out clean.",
+      "Cool completely and cut into neat 1/2-inch circular discs.",
+      "Shallow sear on an iron tawa with a teaspoon of oil and extra sesame seeds until golden and crisp on both sides.",
+      "Serve warm as a high-protein, nutrient-dense herbal snack."
+    ],
+    "healthNote": "Fresh coriander is loaded with natural bioflavonoids, antioxidants, and dietary iron; steaming ensures 0 trans fats."
+  },
+  {
+    "id": "s_marathi_mattha",
+    "name": "Chilled Maharashtrian Spiced Mattha (Tempered Buttermilk with Ginger)",
+    "category": "snack",
+    "cuisine": "marathi",
+    "cuisines": [
+      "marathi",
+      "indian"
+    ],
+    "cuisineName": "Maharashtrian",
+    "cuisineFlag": "🚩",
+    "seasons": [
+      "summer",
+      "monsoon",
+      "winter",
+      "all"
+    ],
+    "weather": [
+      "hot",
+      "pleasant",
+      "all"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "regions": [
+      "south_asia",
+      "global"
+    ],
+    "seasonalNote": "The golden probiotic restorative drink for gut microbiome integrity and rapid rehydration",
+    "isVeg": true,
+    "prepTime": "4 mins",
+    "cookTime": "0 mins",
+    "difficulty": "Very Easy",
+    "servingSize": "1 Tall Glass (240ml)",
+    "weightGrams": 240,
+    "calories": 85,
+    "carbs": 6.5,
+    "protein": 4.8,
+    "fat": 4.2,
+    "fiber": 0.8,
+    "sugar": 4,
+    "sodium": 160,
+    "vitamins": {
+      "vitaminC": 12,
+      "vitaminD": 0.4,
+      "vitaminB12": 0.6,
+      "iron": 0.6,
+      "calcium": 160,
+      "zinc": 0.9
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "conditions": [
+      "diabetes",
+      "hypertension",
+      "gerd",
+      "gluten_free"
+    ],
+    "ageRange": [
+      2,
+      95
+    ],
+    "texture": "liquid",
+    "ingredients": [
+      {
+        "item": "Fresh Churned Cow Milk Curd (Dahi), whisked with chilled water",
+        "qty": "220ml"
+      },
+      {
+        "item": "Freshly Grated Ginger",
+        "qty": "1/2 tsp"
+      },
+      {
+        "item": "Crushed Green Chilli (mild)",
+        "qty": "1/4 piece"
+      },
+      {
+        "item": "Roasted Cumin Powder, Kala Namak & Sendha Namak",
+        "qty": "1/2 tsp"
+      },
+      {
+        "item": "Finely Chopped Fresh Coriander",
+        "qty": "5g"
+      }
+    ],
+    "recipeSteps": [
+      "Whisk fresh dahi with chilled spring water using a traditional wooden churner until frothy and smooth.",
+      "Add freshly grated ginger juice, roasted cumin powder, black salt, and sendha namak.",
+      "Bruise a tiny piece of green chilli and stir into the buttermilk for mild herbal warmth.",
+      "Garnish generously with finely chopped coriander leaves.",
+      "Serve chilled after lunch or as a mid-afternoon cooling probiotic beverage."
+    ],
+    "healthNote": "Delivers live Lactobacillus probiotics, 160mg of natural dairy calcium, and gingerols that soothe gut inflammation."
   }
 ];
 
