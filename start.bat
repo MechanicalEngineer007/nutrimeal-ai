@@ -1,5 +1,10 @@
 @echo off
 title NutriMeal AI Launcher
-echo Starting NutriMeal AI...
-start "" "C:\Users\Public\nutri_meal_planner\index.html"
+cd /d "%~dp0"
+echo Starting NutriMeal AI Desktop Application...
+if exist "%~dp0desktop\launch_desktop_app.bat" (
+    call "%~dp0desktop\launch_desktop_app.bat"
+) else (
+    start "" "%~dp0index.html"
+)
 exit

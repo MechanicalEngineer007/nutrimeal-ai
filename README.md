@@ -45,14 +45,22 @@ A clinically grounded, machine learning-driven web application designed to gener
 
 ---
 
-## 🚀 How to Launch the App
+## 🚀 Running the Applications
 
-### Option 1: Desktop Shortcut (1-Click)
-Double-click the **`NutriMeal AI`** shortcut on your Windows Desktop!
+### 🖥️ 1. Windows Desktop Application
+The app includes a dedicated desktop mode that runs in a standalone application window (no URL bar, no browser tabs, native desktop framing):
+- **1-Click Launch**: Double-click `start.bat` or run `desktop/launch_desktop_app.bat`.
+- **Install Desktop Shortcut**: Run `desktop/create_desktop_shortcut.bat` to install a desktop shortcut with the official app icon.
+- **Python Desktop Runner**: Run `python desktop/desktop_launcher.py`.
 
-### Option 2: Direct File Path
-Open your browser and navigate to:
-```text
-C:\Users\Public\nutri_meal_planner\index.html
-```
-*(Or double-click `start.bat` in that folder)*.
+### 📱 2. Android Native Application
+- Native source code located in [`android/`](android/) built with Jetpack Compose, Material 3, and offline WebKit WebView engine.
+- To build the APK:
+  ```bash
+  cd android
+  ./gradlew assembleDebug
+  ```
+
+### 🌐 3. Web & Offline Browser Mode
+- Open `index.html` directly in any modern web browser (Edge, Chrome, Firefox, Safari).
+- Works 100% offline with zero external network or CDN calls.
