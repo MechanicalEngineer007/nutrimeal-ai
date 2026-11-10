@@ -1,0 +1,31 @@
+# OS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Android & Gradle
+.gradle/
+build/
+**/build/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+*.apk
+*.aab
+
+# IDE & Editors
+.idea/
+*.iml
+.vscode/
+
+# Logs
+*.log
+
+# Python / Node
+__pycache__/
+*.pyc
+node_modules/
